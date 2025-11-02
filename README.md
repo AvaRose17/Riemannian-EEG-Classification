@@ -6,7 +6,7 @@ This project investigates how to improve EEG-based finger movement classificatio
 # Approach
 
 - Data Source: EEG recordings of individual finger movements.
-- Problem: EEG signals exhibit complex geometric relationships that are poorly modeled in Euclidean space.
+- Problem: EEG signals are multidimensional (68 different electrodes = 68 dementions), not flat. Typical flat (Euclidean) geometry does not represent the relationship between data points properly. 
 - Method:
     - Used Riemannian geometry to extract covariance-based features from EEG data.
     - Compared performance across Euclidean, Log-Euclidean, and Riemannian feature spaces.
